@@ -15,7 +15,8 @@ class Zsh <Formula
                           "--disable-dependency-tracking",
                           # don't version stuff in Homebrew, we already do that!
                           "--enable-fndir=#{share}/zsh/functions",
-                          "--enable-scriptdir=#{share}/zsh/scripts"
+                          "--enable-scriptdir=#{share}/zsh/scripts",
+			  "--enable-pcre"
 
     # Again, don't version installation directories
     inreplace ["Makefile", "Src/Makefile"],
